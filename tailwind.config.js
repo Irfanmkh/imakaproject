@@ -3,7 +3,8 @@ module.exports = {
 content: ["index.html",
 "./resources/**/*.blade.php",
 "./resources/**/*.js",
-"./resources/**/*.vue",
+        "./resources/**/*.vue",
+
 ],
 theme: {
 container: {
@@ -25,5 +26,8 @@ raleway: ['Raleway', 'sans-serif'],
 }
 },
 },
-plugins: [],
+    plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+],
 };
